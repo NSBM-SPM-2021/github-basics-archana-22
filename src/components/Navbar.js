@@ -33,7 +33,8 @@ function Navbar() {
             <div className="navbar">
                 <div className="navbar-container container">
                     <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-                        <GiMedicalPackAlt className="navbar-icon"/>
+                        {/* <GiMedicalPackAlt className="navbar-icon"/> */}
+                        <img src='images/icon.svg' alt= '' />
                         DoctorAppointment
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
@@ -62,17 +63,17 @@ function Navbar() {
                         </li> */}
                         <li className='nav-btn'>
                 {button ? (
-                  <Link to='/sign-up' className='btn-link'>
-                    <Button buttonStyle='btn--outline'>SIGN UP</Button>
+                  <Link to='/Appointment' className='btn-link'>
+                    <Button buttonStyle='btn--outline'>Make An Appointment</Button>
                   </Link>
                 ) : (
-                  <Link to='/sign-up' className='btn-link'>
+                  <Link to='/Appointment' className='btn-link'>
                     <Button
                       buttonStyle='btn--outline'
                       buttonSize='btn--mobile'
                       onClick={closeMobileMenu}
                     >
-                      SIGN UP
+                      Make an Appointment
                     </Button>
                   </Link>
                            )} 
