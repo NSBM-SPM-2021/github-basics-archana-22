@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './components/Pages/HomePage/Home';
-import appointment from './components/Pages/MakeAnAppointment/Appointment'
+import appointment from './components/Pages/MakeAnAppointment/MainAppointment'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Pages/Footerjs/Footer';
@@ -13,7 +13,6 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/Appointment' exact component={appointment} />
-        <Route path='/signup' exact component={Home} />
       </Switch>
       <Footer />
     </Router>
