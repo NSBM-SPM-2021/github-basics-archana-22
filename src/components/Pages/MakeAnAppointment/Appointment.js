@@ -9,7 +9,7 @@ class MakeAppointments extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        showBody: false,
+        showBody: true,
         patientName: "",
         patientAge: "",
         gender: "",
@@ -72,46 +72,58 @@ class MakeAppointments extends React.Component {
         };
   
     return (
-        <div>
+        <div className='form-content-left'>
             <Card className="mt-4 mb-4 card-border" outline color="primary">
-            <CardHeader style={styles} onClick={this.toggleBody}><i className="fas fa-plus"></i> Add New Appointment</CardHeader>
+            <CardHeader onClick={this.toggleBody}><h1> Add New Appointment </h1> </CardHeader>
             <CardBody style={displayBody} id="aptBody">
             <FormText color="muted" className="mb-1">
-                <span className="text-danger">*</span>All fields are required
+                <h1> <span className="form-input-login">*</span> All fields are required </h1>
             </FormText>
-            <Form onSubmit={this.save}>
+            <Form className='form' onSubmit={this.save}>
+              <div className='form-inputs'>
                 <FormGroup>
-                <Label for="patientName">Patient Name</Label>
-                <Input type="text" id="patientName" placeholder="Patient's name" value={this.state.patientName} onChange={this.handleChange} />
+                <Label  className='form-label' for="patientName">Patient Name</Label>
+                <Input className='form-input' type="text" id="patientName" placeholder="Patient's name" value={this.state.patientName} onChange={this.handleChange} />
                 </FormGroup>
+              </div>
+              <div className='form-inputs'>
                 <FormGroup>
-                <Label for="patientAge">Age</Label>
-                <Input type="number" id="patientAge" placeholder="Patient's age" value={this.state.patientAge} onChange={this.handleChange} />
+                <Label  className='form-label' for="patientAge">Age</Label>
+                <Input className='form-input' type="number" id="patientAge" placeholder="Patient's age" value={this.state.patientAge} onChange={this.handleChange} />
                 </FormGroup>
+              </div>
+              <div className='form-inputs'>
                 <FormGroup>
-                <Label for="gender">Gender</Label>
-                <Input type="select" id="gender" value={this.state.gender} onChange={this.handleChange} >
+                <Label  className='form-label'for="gender">Gender</Label>
+                <Input className='form-input' type="select" id="gender" value={this.state.gender} onChange={this.handleChange} >
                     <option>Select gender</option>
                     <option>Male</option>
                     <option>Female</option>
                 </Input>
                 </FormGroup>
+              </div>
+              <div className='form-inputs'>
                 <FormGroup>
-                <Label for="aptDate">Date</Label>
-                <Input type="date" id="aptDate" value={this.state.aptDate} onChange={this.handleChange} />
+                <Label  className='form-label' for="aptDate">Date</Label>
+                <Input className='form-input' type="date" id="aptDate" value={this.state.aptDate} onChange={this.handleChange} />
                 </FormGroup>
+              </div>
+              <div className='form-inputs'>
                 <FormGroup>
-                <Label for="aptTime">Time</Label>
-                <Input type="time" id="aptTime" value={this.state.aptTime} onChange={this.handleChange} />
+                <Label className='form-label'for="aptTime">Time</Label>
+                <Input className='form-input'type="time" id="aptTime" value={this.state.aptTime} onChange={this.handleChange} />
                 </FormGroup>
+              </div>
+              <div className='form-inputs'>
                 <FormGroup>
-                <Label for="exampleText">Problem</Label>
-                <Input type="textarea" id="aptNotes" placeholder="Notes" value={this.state.aptNotes} onChange={this.handleChange} />
+                <Label  className='form-label'for="exampleText">Problem</Label>
+                <Input className='form-input'type="textarea" id="aptNotes" placeholder="Notes" value={this.state.aptNotes} onChange={this.handleChange} />
                 </FormGroup>
-                <Alert color="danger" style={errors}>
+              </div>
+                <Alert className='alert' color="danger" style={errors}>
                     Please fill all the details
                 </Alert>
-                    <Button type="submit" color="primary" block>Add Appointment</Button>
+                    <Button className='form-input-btn' type="submit" color="primary" block>Add Appointment</Button>
             </Form>
             </CardBody>
             </Card >

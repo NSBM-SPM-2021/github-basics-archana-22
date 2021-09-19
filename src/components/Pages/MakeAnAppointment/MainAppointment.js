@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import { Container } from 'reactstrap';
 import Appointments from './Appointment';
-import MakeAppointments from './Appointment';
+import './Appointment.css'
 
 
 class MainAppointment extends Component {
@@ -70,7 +70,12 @@ class MainAppointment extends Component {
     return (
       <>
         <Container>
+        <div className='form-container'>
           <Appointments saveApt={this.saveAppointment} />
+          <div className='form-content-right'>
+            <img className='form-img' src='images/image3.jpg' alt='spaceship' />
+          </div>
+        </div>
         </Container>
       </>
     );
