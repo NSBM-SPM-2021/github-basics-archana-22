@@ -72,9 +72,9 @@ class MainAppointment extends Component {
         <Container>
         <div className='form-container'>
           <Appointments saveApt={this.saveAppointment} />
-          <div className='form-content-right'>
+          {/* <div className='form-content-right'>
             <img className='form-img' src='images/image3.jpg' alt='spaceship' />
-          </div>
+          </div> */}
         </div>
         </Container>
       </>

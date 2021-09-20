@@ -77,7 +77,7 @@ class MakeAppointments extends React.Component {
             <CardHeader onClick={this.toggleBody}><h1> Add New Appointment </h1> </CardHeader>
             <CardBody style={displayBody} id="aptBody">
             <FormText color="muted" className="mb-1">
-                <h1> <span className="form-input-login">*</span> All fields are required </h1>
+                 <span className="form-input-login">* All fields are required</span>  
             </FormText>
             <Form className='form' onSubmit={this.save}>
               <div className='form-inputs'>
