@@ -15,7 +15,7 @@
     right: 3%;
     font-size: 1.5rem;
     z-index: 1;
-    color: #fff;
+    color: rgb(255, 255, 255);
     cursor: pointer;
   }
   
@@ -51,7 +51,8 @@
     text-align: center;
     font-size: 24px;
     margin-top: 80px;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    
   }
   
   .form-content-left {
@@ -62,8 +63,8 @@
     right: 0;
     width: 1000px;
     height: 600px;
-    border: 3px solid #000000;
-    background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
+    border: 3px solid #ffffff;
+    background: linear-gradient(90deg, rgb(76, 122, 184) 0%, rgb(10, 87, 187) 100%);
   }
   
   .form {
@@ -84,7 +85,7 @@
     text-align: center;
     width: 80%;
     margin-bottom: 1px;
-    color: #fff;
+    color: rgb(255, 255, 255);
   }
   
   .form-inputs {
@@ -95,14 +96,15 @@
   .alert {
     font-size: 0.8rem;
     margin-top: 0.5rem;
-    color: #f00e0e;
+    color: #eb1616;
   }
   
   .form-label {
     display: inline-block;
     font-size: 0.8rem;
     margin-bottom: 6px;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    
   }
   
   .form-input {
@@ -113,22 +115,24 @@
     height: 40px;
     width: 100%;
     border: none;
+    background-color: #ffffff;
   }
   
   .form-input::placeholder {
     color: #595959;
     font-size: 12px;
-  }
+    
+      }
   
   .form-input-btn {
-    width: 80%;
+    width: 50%;
     height: 50px;
     margin-top: 10px;
     border-radius: 2px;
     background: linear-gradient(
       90deg,
-      rgb(39, 176, 255) 0%,
-      rgb(0, 232, 236) 100%
+      rgb(18, 62, 104) 0%,
+      rgb(15, 44, 88) 100%
     );
     outline: none;
     border: none;
@@ -140,8 +144,8 @@
     cursor: pointer;
     background: linear-gradient(
       90deg,
-      rgb(39, 143, 255) 0%,
-      rgb(12, 99, 250) 100%
+      rgb(64, 124, 189) 0%,
+      rgb(85, 121, 184) 100%
     );
     transition: all 0.4s ease-out;
   }
@@ -150,7 +154,7 @@
     font-size: 1rem;
     text-align: center;
     margin-top: 10px;
-    color: #fff;
+    color: rgb(217, 233, 79);
     width: 80%;
   }
   
